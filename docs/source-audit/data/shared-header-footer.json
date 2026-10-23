@@ -1,0 +1,524 @@
+{
+ "#masthead": {
+  "content": [
+   {
+    "t": "text",
+    "el": "div",
+    "class": "wrapper",
+    "text": ".site-branding"
+   },
+   {
+    "t": "img",
+    "src": "https://dragonfly-village.com/wp-content/uploads/2019/02/dragonfly-logo-160x54-black.png",
+    "alt": "dragonfly-village",
+    "w": "160",
+    "h": "54",
+    "srcset": ""
+   },
+   {
+    "t": "a",
+    "text": "",
+    "href": "https://dragonfly-village.com/",
+    "class": "custom-logo-link"
+   },
+   {
+    "t": "p",
+    "text": "dragonfly-village",
+    "links": [
+     {
+      "text": "dragonfly-village",
+      "href": "https://dragonfly-village.com/"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "A Magical Village For Your Retreat…"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "title",
+    "text": "Contact phone:"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "value",
+    "text": "+62 859 3388 1999"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "title",
+    "text": "Working hours:"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "value",
+    "text": "7:00 am - 9:00 pm"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "title",
+    "text": "Contact e-mail:"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "value",
+    "text": "home@dragonfly-village.com"
+   },
+   {
+    "t": "text",
+    "el": "div",
+    "class": "inner-wrapper",
+    "text": "#site-navigation"
+   },
+   {
+    "t": "li",
+    "text": "Home",
+    "links": [
+     {
+      "text": "Home",
+      "href": "https://dragonfly-village.com/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Accommodation",
+    "links": [
+     {
+      "text": "Accommodation",
+      "href": "https://dragonfly-village.com/accommodations/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Retreats & Events",
+    "links": [
+     {
+      "text": "Retreats & Events",
+      "href": "https://dragonfly-village.com/retreats-events/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Sauna",
+    "links": [
+     {
+      "text": "Sauna",
+      "href": "https://dragonfly-village.com/herbal-steam-sauna/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Dragonfly Café",
+    "links": [
+     {
+      "text": "Dragonfly Café",
+      "href": "https://dragonfly-village.com/dragonfly-village-2/dragonfly-cafe-open-daily/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Detox Program",
+    "links": [
+     {
+      "text": "Detox Program",
+      "href": "https://dragonfly-village.com/detox/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "About",
+    "links": [
+     {
+      "text": "About",
+      "href": "https://dragonfly-village.com/about/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Contact",
+    "links": [
+     {
+      "text": "Contact",
+      "href": "https://dragonfly-village.com/contacts/"
+     }
+    ]
+   },
+   {
+    "t": "form",
+    "action": "https://dragonfly-village.com/",
+    "id": null,
+    "class": "search-form",
+    "fields": [
+     {
+      "tag": "input",
+      "type": "search",
+      "name": "s",
+      "placeholder": "Search …",
+      "required": false,
+      "options": null
+     }
+    ],
+    "text": "Search for: Search"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "title",
+    "text": "Contact phone:"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "value",
+    "text": "+62 859 3388 1999"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "title",
+    "text": "Working hours:"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "value",
+    "text": "7:00 am - 9:00 pm"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "title",
+    "text": "Contact e-mail:"
+   },
+   {
+    "t": "text",
+    "el": "span",
+    "class": "value",
+    "text": "home@dragonfly-village.com"
+   }
+  ],
+  "links": [
+   [
+    "",
+    "https://dragonfly-village.com/"
+   ],
+   [
+    "dragonfly-village",
+    "https://dragonfly-village.com/"
+   ],
+   [
+    "Home",
+    "https://dragonfly-village.com/"
+   ],
+   [
+    "Accommodation",
+    "https://dragonfly-village.com/accommodations/"
+   ],
+   [
+    "Retreats & Events",
+    "https://dragonfly-village.com/retreats-events/"
+   ],
+   [
+    "Sauna",
+    "https://dragonfly-village.com/herbal-steam-sauna/"
+   ],
+   [
+    "Dragonfly Café",
+    "https://dragonfly-village.com/dragonfly-village-2/dragonfly-cafe-open-daily/"
+   ],
+   [
+    "Detox Program",
+    "https://dragonfly-village.com/detox/"
+   ],
+   [
+    "About",
+    "https://dragonfly-village.com/about/"
+   ],
+   [
+    "Contact",
+    "https://dragonfly-village.com/contacts/"
+   ]
+  ]
+ },
+ ".footer-widgets": {
+  "content": [
+   {
+    "t": "text",
+    "el": "div",
+    "class": "wrapper",
+    "text": ".content-bottom-widgets"
+   },
+   {
+    "t": "img",
+    "src": "https://dragonfly-village.com/wp-content/uploads/2019/02/Dragonfly_Village_Logo-White.png",
+    "alt": "",
+    "w": "1657",
+    "h": "721",
+    "srcset": "https://dragonfly-village.com/wp-content/uploads/2019/02/Dragonfly_Village_Logo-White.png 1657w, https://dragonfly-village.com/wp-content/uploads/2019/02/Dragonfly_Village_Logo-White-300x131.png 300w, https://dragonfly-village.com/wp-content/uploads/2019/02/Dragonfly_Village_Logo-White-768x334.png 768w, https://dragonfly-village.com/wp-content/uploads/2019/02/Dragonfly_Village_Logo-White-1024x446.png 1024w, https://dragonfly-village.com/wp-content/uploads/2019/02/Dragonfly_Village_Logo-White-891x388.png 891w, https://dragonfly-village.com/wp-content/uploads/2019/02/Dragonfly_Village_Logo-White-600x261.png 600w"
+   },
+   {
+    "t": "h2",
+    "text": "Find us on"
+   },
+   {
+    "t": "li",
+    "text": "facebook",
+    "links": [
+     {
+      "text": "facebook",
+      "href": "https://www.facebook.com/Dragonfly-Village-304468789679473/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "instagram",
+    "links": [
+     {
+      "text": "instagram",
+      "href": "https://www.instagram.com/dragonflyvillage/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "youtube",
+    "links": [
+     {
+      "text": "youtube",
+      "href": "https://www.youtube.com/watch?v=BfLM_niQW2Y"
+     }
+    ]
+   },
+   {
+    "t": "h2",
+    "text": "Info"
+   },
+   {
+    "t": "p",
+    "text": "Dragonfly Village , an enchanted retreat paradise, is set in the midst of one of the most beautiful rice field walks in the center of Ubud, Bali"
+   },
+   {
+    "t": "p",
+    "text": "Phone: +62 859 3388 1999 WhatsApp text only during working hours from 7am to 9pm : +62 859 3388 1999"
+   },
+   {
+    "t": "h2",
+    "text": "Search This Site"
+   },
+   {
+    "t": "form",
+    "action": "https://dragonfly-village.com/",
+    "id": null,
+    "class": "search-form",
+    "fields": [
+     {
+      "tag": "input",
+      "type": "search",
+      "name": "s",
+      "placeholder": "Search …",
+      "required": false,
+      "options": null
+     }
+    ],
+    "text": "Search for: Search"
+   }
+  ],
+  "links": [
+   [
+    "facebook",
+    "https://www.facebook.com/Dragonfly-Village-304468789679473/"
+   ],
+   [
+    "instagram",
+    "https://www.instagram.com/dragonflyvillage/"
+   ],
+   [
+    "youtube",
+    "https://www.youtube.com/watch?v=BfLM_niQW2Y"
+   ]
+  ]
+ },
+ "#colophon": {
+  "content": [
+   {
+    "t": "text",
+    "el": "div",
+    "class": "site-info",
+    "text": "dragonfly-village © 2026 All Rights Reserved."
+   },
+   {
+    "t": "li",
+    "text": "Home",
+    "links": [
+     {
+      "text": "Home",
+      "href": "https://dragonfly-village.com/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Accommodation",
+    "links": [
+     {
+      "text": "Accommodation",
+      "href": "https://dragonfly-village.com/accommodations/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Retreats & Events",
+    "links": [
+     {
+      "text": "Retreats & Events",
+      "href": "https://dragonfly-village.com/retreats-events/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Sauna",
+    "links": [
+     {
+      "text": "Sauna",
+      "href": "https://dragonfly-village.com/herbal-steam-sauna/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Dragonfly Café",
+    "links": [
+     {
+      "text": "Dragonfly Café",
+      "href": "https://dragonfly-village.com/dragonfly-village-2/dragonfly-cafe-open-daily/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Detox Program",
+    "links": [
+     {
+      "text": "Detox Program",
+      "href": "https://dragonfly-village.com/detox/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "About",
+    "links": [
+     {
+      "text": "About",
+      "href": "https://dragonfly-village.com/about/"
+     }
+    ]
+   },
+   {
+    "t": "li",
+    "text": "Contact",
+    "links": [
+     {
+      "text": "Contact",
+      "href": "https://dragonfly-village.com/contacts/"
+     }
+    ]
+   }
+  ],
+  "links": [
+   [
+    "Home",
+    "https://dragonfly-village.com/"
+   ],
+   [
+    "Accommodation",
+    "https://dragonfly-village.com/accommodations/"
+   ],
+   [
+    "Retreats & Events",
+    "https://dragonfly-village.com/retreats-events/"
+   ],
+   [
+    "Sauna",
+    "https://dragonfly-village.com/herbal-steam-sauna/"
+   ],
+   [
+    "Dragonfly Café",
+    "https://dragonfly-village.com/dragonfly-village-2/dragonfly-cafe-open-daily/"
+   ],
+   [
+    "Detox Program",
+    "https://dragonfly-village.com/detox/"
+   ],
+   [
+    "About",
+    "https://dragonfly-village.com/about/"
+   ],
+   [
+    "Contact",
+    "https://dragonfly-village.com/contacts/"
+   ]
+  ]
+ },
+ "menus": {
+  "primary-menu": [
+   {
+    "label": "Home",
+    "href": "https://dragonfly-village.com/",
+    "children": []
+   },
+   {
+    "label": "Accommodation",
+    "href": "https://dragonfly-village.com/accommodations/",
+    "children": []
+   },
+   {
+    "label": "Retreats & Events",
+    "href": "https://dragonfly-village.com/retreats-events/",
+    "children": []
+   },
+   {
+    "label": "Sauna",
+    "href": "https://dragonfly-village.com/herbal-steam-sauna/",
+    "children": []
+   },
+   {
+    "label": "Dragonfly Café",
+    "href": "https://dragonfly-village.com/dragonfly-village-2/dragonfly-cafe-open-daily/",
+    "children": []
+   },
+   {
+    "label": "Detox Program",
+    "href": "https://dragonfly-village.com/detox/",
+    "children": []
+   },
+   {
+    "label": "About",
+    "href": "https://dragonfly-village.com/about/",
+    "children": []
+   },
+   {
+    "label": "Contact",
+    "href": "https://dragonfly-village.com/contacts/",
+    "children": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,116 @@
+.top { padding-block: var(--space-m) var(--space-l); }
+
+.crumb { margin: 0 0 1rem; font-size: var(--step--1); }
+.crumb a { font-weight: 600; }
+
+.head {
+  display: grid;
+  gap: var(--space-m);
+  align-items: start;
+}
+
+.head h1 { font-size: var(--step-3); max-width: 26ch; }
+.headText { min-width: 0; }
+
+.when {
+  margin: -0.2rem 0 1rem;
+  font-weight: 600;
+  font-size: var(--step-1);
+  color: var(--terracotta-ink);
+}
+
+.poster { max-width: 420px; width: 100%; }
+
+@media (min-width: 900px) {
+  .head { grid-template-columns: minmax(0, 1fr) 380px; gap: var(--space-l); }
+}
+
+@media (min-width: 1200px) {
+  .head { grid-template-columns: minmax(0, 1fr) 420px; }
+}
+
+.body {
+  display: grid;
+  gap: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+
+@media (min-width: 900px) {
+  .body { grid-template-columns: minmax(0, 1fr) 380px; align-items: start; }
+}
+
+@media (min-width: 1200px) {
+  .body { grid-template-columns: minmax(0, 1fr) 420px; }
+}
+
+.main { min-width: 0; }
+
+.h2 { font-size: var(--step-2); margin-top: var(--space-m); }
+
+.closing {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--plum);
+  font-size: var(--step-1);
+}
+
+.teacher {
+  margin-top: var(--space-m);
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.day {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.day h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.day li { padding-left: 1rem; text-indent: -1rem; }
+.day li + li { margin-top: 0.25rem; }
+
+.aside {
+  padding: 1.4rem 1.5rem;
+  background: var(--paper);
+  border-top: 3px solid var(--plum);
+}
+
+.facts { margin: 0; display: grid; gap: 0.75rem; }
+.facts dt { font-size: var(--step--1); color: var(--grey); }
+.facts dd { margin: 0; font-weight: 600; color: var(--charcoal); }
+
+.asideTitle { font-size: 1.1rem; margin: 1.4rem 0 0.5rem; }
+
+.includes { padding-left: 1.1rem; margin: 0; }
+.includes li + li { margin-top: 0.3rem; }
+
+.book { margin-top: 1.5rem; }
+.book :global(.btn) { width: 100%; }
+.bookNote { margin: 0.6rem 0 0; font-size: var(--step--1); overflow-wrap: anywhere; }
+
+.pager {
+  display: grid;
+  gap: 1rem;
+  padding-block: var(--space-m) 0;
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width: 700px) {
+  .pager { grid-template-columns: 1fr 1fr; }
+}
+
+.pager a {
+  display: grid;
+  gap: 0.15rem;
+  color: var(--plum);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pager a span { font-weight: 400; color: var(--grey); font-size: var(--step--1); }
+.pager a:hover { color: var(--terracotta-ink); }
+.next { text-align: right; }
+
+@media (max-width: 699px) {
+  .next { text-align: left; }
+}

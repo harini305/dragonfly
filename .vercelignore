@@ -1,0 +1,5 @@
+# Not needed to build or serve the site
+docs/
+assets-source/
+scripts/
+AGENTS.md

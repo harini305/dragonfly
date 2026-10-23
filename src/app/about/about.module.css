@@ -1,0 +1,110 @@
+.motto { margin: 1.25rem 0 0; }
+
+.motto p {
+  margin: 0 0 0.3rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: var(--step-2);
+  line-height: 1.3;
+  color: var(--plum);
+}
+
+.motto footer { color: var(--grey); font-size: var(--step--1); }
+
+.small { font-size: 1.05rem; }
+
+.features { columns: 2; column-gap: 1.5rem; border-top: 0; }
+.features li { break-inside: avoid; border-top: 1px solid var(--line); border-bottom: 0; }
+
+@media (max-width: 380px) {
+  .features { columns: 1; }
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid var(--terracotta);
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 1.5rem 1.5rem;
+}
+
+.timeline li:last-child { padding-bottom: 0; }
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 0.45rem;
+  width: 12px;
+  height: 12px;
+  background: var(--paper);
+  border: 2px solid var(--plum);
+}
+
+.timeline time { font-size: var(--step--1); font-weight: 600; color: var(--terracotta-ink); }
+.timeline h3 { margin: 0.15rem 0 0.25rem; font-size: var(--step-1); }
+.timeline p { margin: 0; color: var(--grey); }
+
+.pets {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 760px;
+}
+
+@media (min-width: 640px) {
+  .pets { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.pets li { display: grid; gap: 0.5rem; justify-items: center; text-align: center; }
+.pets img { width: 100%; max-width: 160px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; }
+.pets span { font-weight: 600; color: var(--plum); }
+
+.reflections {
+  display: grid;
+  gap: var(--space-m);
+  align-items: start;
+}
+
+.reflectionsNote { margin: 0; color: var(--muted); }
+
+@media (min-width: 900px) {
+  .reflections { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: var(--space-l); }
+}
+
+.voices {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 1;
+  column-gap: var(--space-m);
+}
+
+@media (min-width: 640px) { .voices { columns: 2; } }
+
+.voices li {
+  break-inside: avoid;
+  margin-bottom: var(--space-m);
+  padding-top: 1rem;
+  border-top: 1px solid rgb(255 255 255 / 0.18);
+}
+
+.voices figure { margin: 0; }
+.voices blockquote { margin: 0 0 0.75rem; }
+.voices blockquote p { margin: 0 0 0.5rem; }
+.voiceTitle { font-family: var(--font-heading); font-weight: 600; color: var(--white); }
+
+.voices figcaption {
+  display: grid;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.voices figcaption span { font-weight: 400; color: var(--muted); font-size: var(--step--1); }

@@ -1,0 +1,329 @@
+/* Dragonfly Village — design tokens and base styles.
+   Brand colours from docs/source-audit/05-brand-reference.md §3.1. Two families only:
+   Montserrat (headings) and Source Sans 3 (everything else), loaded via next/font. */
+
+:root {
+  --plum: #330026;
+  --plum-soft: #4a1a3c;
+  --terracotta: #e2725b;
+  --coral: #e57e6b;
+  /* Terracotta darkened for text and links: 5.3:1 on paper, 6:1 on white (AA). */
+  --terracotta-ink: #a8432c;
+  --charcoal: #333333;
+  --grey: #66676d;
+  --muted: #9b9ca4;
+  --light: #f3f3f3;
+  --paper: #f6f1ea;
+  --white: #ffffff;
+  --line: #e2dcd3;
+  --on-plum: #e9e1e6;
+
+  --font-heading: var(--font-montserrat), system-ui, sans-serif;
+  --font-body: var(--font-source-sans), system-ui, sans-serif;
+
+  --step--1: 0.9rem;
+  --step-0: clamp(1.0625rem, 1rem + 0.2vw, 1.15rem);
+  --step-1: clamp(1.15rem, 1.06rem + 0.45vw, 1.35rem);
+  --step-2: clamp(1.35rem, 1.18rem + 0.85vw, 1.8rem);
+  --step-3: clamp(1.6rem, 1.3rem + 1.5vw, 2.4rem);
+  --step-4: clamp(1.85rem, 1.4rem + 2.3vw, 3.1rem);
+
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --wide: 1240px;
+  --measure: 66ch;
+  --space-s: clamp(0.75rem, 0.6rem + 0.6vw, 1.1rem);
+  --space-m: clamp(1.25rem, 1rem + 1.2vw, 2rem);
+  --space-l: clamp(1.5rem, 1.25rem + 1.1vw, 2.5rem);
+  --space-xl: clamp(2rem, 1.6rem + 1.6vw, 3.25rem);
+  /* Measured footer height (set by FooterFit); fallback until measured. */
+  --footer-h: 560px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--charcoal);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  overflow-x: clip;
+}
+
+img,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--plum);
+  margin: 0 0 0.6em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+h1 { font-size: var(--step-4); }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-1); letter-spacing: -0.005em; }
+h4 { font-size: var(--step-0); }
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+figure {
+  margin: 0 0 1em;
+}
+
+p { text-wrap: pretty; }
+
+a {
+  color: var(--terracotta-ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover { color: var(--plum); }
+
+:focus-visible {
+  outline: 3px solid var(--terracotta-ink);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--plum);
+  color: var(--white);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  background: var(--plum);
+  color: var(--white);
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+.skip-link:focus { top: 1rem; color: var(--white); }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Layout primitives */
+
+.wrap {
+  width: 100%;
+  max-width: calc(var(--wide) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.wrap-narrow {
+  max-width: calc(780px + var(--gutter) * 2);
+}
+
+.section { padding-block: var(--space-xl); }
+.section-tight { padding-block: var(--space-l); }
+
+/* The last block before the footer fills the rest of the screen, so at the bottom of
+   the page that block and the footer together fit the viewport exactly. Content is
+   centred vertically in any extra space. Taller blocks are unaffected. */
+main > :last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100svh - var(--footer-h));
+}
+
+main > :last-child > * { width: 100%; }
+
+/* Consecutive sections on the same (white) background share one gap, not two. */
+:is(.section, .section-tight):not(.section-paper, .section-plum) + :is(.section, .section-tight):not(.section-paper, .section-plum) {
+  padding-top: 0;
+}
+.section-paper { background: var(--paper); }
+.section-plum { background: var(--plum); color: var(--on-plum); }
+.section-plum h2,
+.section-plum h3 { color: var(--white); }
+.section-plum a { color: #f0b3a6; }
+.section-plum a:hover { color: var(--white); }
+
+main:has(> .section-paper:last-child) + footer,
+main:has(> .section-plum:last-child) + footer { margin-top: 0; }
+
+.prose { max-width: var(--measure); }
+.prose > :last-child { margin-bottom: 0; }
+
+.lead {
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--charcoal);
+}
+
+.muted { color: var(--grey); }
+.small { font-size: var(--step--1); }
+
+.split {
+  display: grid;
+  gap: var(--space-l);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .split-wide-left { grid-template-columns: 1.25fr 1fr; }
+  .split-wide-right { grid-template-columns: 1fr 1.25fr; }
+  .split-center { align-items: center; }
+}
+
+/* Buttons and actions */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  min-height: 48px;
+  padding: 0.7rem 1.4rem;
+  border: 2px solid var(--plum);
+  background: var(--plum);
+  color: var(--white);
+  font: 600 1rem/1.2 var(--font-body);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn:hover { background: var(--plum-soft); border-color: var(--plum-soft); color: var(--white); }
+
+.btn-coral { background: var(--coral); border-color: var(--coral); color: var(--charcoal); }
+.btn-coral:hover { background: var(--terracotta); border-color: var(--terracotta); color: #1f1f1f; }
+
+.btn-ghost { background: transparent; color: var(--plum); }
+.btn-ghost:hover { background: var(--plum); color: var(--white); }
+
+.btn-light { background: var(--white); border-color: var(--white); color: var(--plum); }
+.btn-light:hover { background: var(--paper); border-color: var(--paper); color: var(--plum); }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: var(--space-m);
+}
+
+.text-link {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+}
+
+.text-link:hover { text-decoration-color: currentColor; }
+
+/* Shared content pieces */
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.45rem 1.5rem;
+  margin: 0;
+}
+
+.facts dt { font-weight: 600; color: var(--plum); }
+.facts dd { margin: 0; }
+
+@media (max-width: 480px) {
+  .facts { grid-template-columns: 1fr; gap: 0.1rem; }
+  .facts dd { margin-bottom: 0.6rem; }
+}
+
+.list-clean { list-style: none; padding: 0; }
+
+.list-ruled {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.list-ruled li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.note {
+  border-left: 3px solid var(--terracotta);
+  padding: 0.75rem 1rem;
+  background: var(--paper);
+  color: var(--charcoal);
+  font-size: var(--step--1);
+  max-width: var(--measure);
+}
+
+.section-paper .note { background: var(--white); }
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  background: var(--light);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ratio-3-2 { aspect-ratio: 3 / 2; }
+.ratio-4-3 { aspect-ratio: 4 / 3; }
+.ratio-2-1 { aspect-ratio: 2 / 1; }
+.ratio-1-1 { aspect-ratio: 1 / 1; }
+.ratio-4-5 { aspect-ratio: 4 / 5; }
+.ratio-3-1 { aspect-ratio: 3 / 1; }
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: var(--step--1);
+  color: var(--grey);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

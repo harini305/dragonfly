@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+# Original downloads are kept locally for regeneration (see assets-source/SOURCES.csv).
+assets-source/**/*.jpg
+assets-source/**/*.jpeg
+assets-source/**/*.png
+npm-debug.log*
+.env*
+.vercel
+# Phase 1 test screenshots (local reference only)
+docs/source-audit/screenshots/

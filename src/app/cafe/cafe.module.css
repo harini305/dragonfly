@@ -1,0 +1,44 @@
+.kitchen {
+  display: grid;
+  gap: var(--space-l);
+}
+
+@media (min-width: 900px) {
+  .kitchen { grid-template-columns: 1.4fr 1fr; align-items: start; }
+}
+
+.hours {
+  display: grid;
+  margin: 0;
+  border-top: 3px solid var(--terracotta);
+  background: var(--paper);
+}
+
+.hours > div {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.hours > div:last-child { border-bottom: 0; }
+.hours dt { font-weight: 600; color: var(--plum); }
+.hours dd { margin: 0; }
+
+.menuHead {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.menuHead h2,
+.menuHead p { margin: 0; }
+
+.garden {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.gardenMain { grid-column: 1 / -1; aspect-ratio: 3 / 2; }

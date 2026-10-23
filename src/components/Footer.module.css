@@ -1,0 +1,82 @@
+.footer {
+  position: relative;
+  margin-top: var(--space-l);
+  background: var(--plum);
+  color: var(--on-plum);
+  font-size: var(--step--1);
+  line-height: 1.6;
+}
+
+.edge {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% - 1px);
+  width: 100%;
+  height: 22px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.75rem 2rem;
+  padding-block: var(--space-l) var(--space-m);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.brand { grid-column: 1 / -1; max-width: 34ch; }
+.brand p { margin: 0.9rem 0 0; }
+
+.logo { width: 150px; }
+
+.title {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  letter-spacing: 0;
+  color: var(--white);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li + li { margin-top: 0.4rem; }
+
+.list a {
+  color: #f0b3a6;
+  text-decoration: none;
+}
+
+.list a:hover { color: var(--white); text-decoration: underline; }
+
+.note { display: block; color: var(--muted); }
+
+.list address { font-style: normal; }
+
+.links { columns: 1; }
+
+.base {
+  padding-block: 1rem 1.25rem;
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+  color: var(--muted);
+}
+
+.base p { margin: 0; }
+
+/* Phones: inline link rows and no tagline keep the footer short. */
+@media (max-width: 899px) {
+  .grid { grid-template-columns: 1fr; gap: 1.25rem; padding-block: 2.25rem 1.25rem; }
+  .brand p { display: none; }
+  .logo { width: 120px; }
+  .links,
+  .inline { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; }
+  .links li + li,
+  .inline li + li { margin-top: 0; }
+}
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: 1.2fr 1.1fr 1.3fr 0.7fr; padding-block: var(--space-l) 1.25rem; }
+  .brand { grid-column: auto; }
+  .links { columns: 2; column-gap: 1.5rem; }
+  .links li { break-inside: avoid; }
+}

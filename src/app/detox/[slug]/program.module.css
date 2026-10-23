@@ -1,0 +1,81 @@
+.head { padding-block: var(--space-m) var(--space-l); }
+
+.crumb { margin: 0 0 1rem; font-size: var(--step--1); font-weight: 600; }
+
+.key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.key dt { font-size: var(--step--1); color: var(--grey); }
+.key dd { margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: var(--step-1); color: var(--plum); }
+
+.durationNote {
+  max-width: 62ch;
+  margin-bottom: var(--space-m);
+  font-size: var(--step--1);
+  color: var(--grey);
+}
+
+.banner { max-height: 360px; }
+
+.body {
+  display: grid;
+  gap: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+
+@media (min-width: 960px) {
+  .body { grid-template-columns: minmax(0, 1fr) 380px; align-items: start; }
+}
+
+.main { max-width: var(--measure); min-width: 0; }
+
+.h2 { font-size: var(--step-2); margin-top: var(--space-m); }
+
+.aside {
+  padding: 1.4rem 1.5rem;
+  background: var(--paper);
+  border-top: 3px solid var(--plum);
+}
+
+.aside :global(.btn) { width: 100%; margin-top: 0.5rem; }
+.aside p:last-child { margin: 0.75rem 0 0; }
+
+.asideTitle { font-size: var(--step-1); }
+
+.price {
+  display: grid;
+  margin: 0 0 1rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--step-2);
+  color: var(--plum);
+}
+
+.price span { font-family: var(--font-body); font-weight: 400; font-size: 1rem; color: var(--grey); }
+
+.inclusions { padding-left: 1.1rem; font-size: 1rem; }
+.inclusions li + li { margin-top: 0.45rem; }
+
+.others { padding-block: var(--space-l) 0; }
+
+.others ul {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+@media (min-width: 760px) {
+  .others ul { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.others li { display: grid; gap: 0.2rem; padding: 1rem 1.1rem; background: var(--white); }
+.others a { font-weight: 600; color: var(--plum); }
+.others span { font-size: var(--step--1); color: var(--grey); }

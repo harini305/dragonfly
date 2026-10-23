@@ -1,0 +1,84 @@
+{
+  "_note": "Facts captured verbatim from https://dragonfly-village.com on 2026-10-21. Values marked 'conflict' need client confirmation (see 08-issues-gaps-questions.md). Do not treat this as edited copy.",
+  "business": {
+    "name": "Dragonfly Village",
+    "tagline": "A Magical Village For Your Retreat…",
+    "phone": "+62 859 3388 1999",
+    "phone_variants_found": ["+62 859 33 88 1999", "+62-859 3388 1999", "+62-857 3388 1999 (conflict – Accommodation page)"],
+    "whatsapp_note": "WhatsApp text only during working hours from 7am to 9pm",
+    "working_hours": "7:00 am - 9:00 pm",
+    "email_general": "home@dragonfly-village.com",
+    "email_retreat_rates": "info@dragonfly-village.com (conflict – which email is current?)",
+    "address_contact_page": "Jalan Raya Ubud, Subak Sok Wayah, Abangan, Ubud, Gianyar, Bali, Indonesia, 80571",
+    "address_home_page": "Jalan Raya Ubud, Subak Sukawayah, Abangan, Ubud, Bali, Indonesia, 80571",
+    "maps_embed_query": "Jl. Subak Sok Wayah Jl. Raya Ubud, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+    "access_notice": "Please call us @ +62 859 3388 1999 for motorbike luggage transfer. Dragonfly Village is not accessible by car the last 700m from the main road.",
+    "check_in": "2pm",
+    "check_out": "11am",
+    "social": {
+      "facebook": "https://www.facebook.com/Dragonfly-Village-304468789679473/",
+      "instagram": "https://www.instagram.com/dragonflyvillage/",
+      "youtube_video": "https://www.youtube.com/watch?v=BfLM_niQW2Y"
+    }
+  },
+  "features": ["Herbal Steam Sauna", "Close to Ubud center", "Salt Water Pool", "Workshop Spaces", "Dragonfly Café", "Free Fiberoptic WiFi", "Daily House Keeping", "Permaculture Garden"],
+  "seasons": {
+    "normal": "Jan 15 – July 14 and Sept 15 – Dec 25",
+    "peak": "July 15 – Sept 14 and Dec 26 – Jan 14"
+  },
+  "rooms": [
+    {"slug": "mangosteen", "name": "MANGOSTEEN", "type": "Standard Double or Twin Room", "beds": "two single beds OR one king size bed", "normal_idr_k": 1180, "peak_idr_k": 1280, "booking_param": "Mangosteen"},
+    {"slug": "coconut", "name": "COCONUT", "type": "Standard Double or Twin Room", "beds": "two single beds OR one king size bed", "normal_idr_k": 1180, "peak_idr_k": 1280, "booking_param": "Coconut"},
+    {"slug": "mango", "name": "MANGO", "type": "Standard Double or Twin Room", "beds": "two low single beds OR one low king size bed", "normal_idr_k": 1180, "peak_idr_k": 1280, "booking_param": "Mango"},
+    {"slug": "lychee", "name": "LYCHEE", "type": "Standard Twin Room", "beds": "two single beds", "normal_idr_k": 1180, "peak_idr_k": 1280, "booking_param": "Lychee"},
+    {"slug": "papaya", "name": "PAPAYA", "type": "Superior Triple Room", "capacity": 3, "beds": "3 singles or one King + one single", "normal_idr_k": 1430, "peak_idr_k": 1480, "peak_note": "page states peak ends Jan 10th (conflict)", "booking_param": "Papaya"},
+    {"slug": "banana", "name": "BANANA", "type": "Superior Triple Room", "capacity": 3, "beds": "3 singles or one King + one single; one single bed is in the attic", "normal_idr_k": 1380, "peak_idr_k": 1450, "booking_param": "Banana"},
+    {"slug": "lotus", "name": "LOTUS", "type": "Family Suite", "capacity": 3, "beds": "one King + 1 single OR 3 singles", "extras": ["Bathtub", "Fridge"], "normal_idr_k": 1550, "peak_idr_k": 1600, "booking_param": "Lotus"},
+    {"slug": "blue-moon", "name": "BLUE MOON", "type": "Quadruple room", "size": "8m x 5.5m inside", "beds": "4 single beds + 2 hanging beds in the attic (additional cost)", "bathrooms": 2, "extra_bed": "Two extra hanging beds for children at Rp175k each", "normal_idr_k": 1900, "peak_idr_k": 1950, "booking_param": "Blue Moon"}
+  ],
+  "room_amenities": ["Balcony", "Fan-cooled", "Filtered drinking water", "Free WiFi", "Hot water", "Laundry", "Organic insect repellent", "Organic shampoo", "Organic soap", "Toilet & Shower", "High Speed Fiber Optic Wifi"],
+  "sauna": {
+    "days": "Every Monday (Silent), Wednesday and Saturday",
+    "evening": "6-9pm – Rp150k",
+    "wednesday_morning": "9am-11am – Rp100k",
+    "membership": "Monthly membership card available upon request.",
+    "guests": "FREE for our in-house guests",
+    "reservation": "NO RESERVATION IS NEEDED"
+  },
+  "cafe": {
+    "hours": "daily for breakfast, lunch & dinner from 7.30am-8.30pm",
+    "hours_conflicts": ["Café meta description: Open Daily 7.30am – 9pm", "About FAQ: 7.30am – 9pm"],
+    "diet": "vegetarian and vegan only. GF and vegan options are readily available. We make our own coconut oil for cooking. Fish option added in 2026.",
+    "menu_images": 32
+  },
+  "pool": "12m saltwater pool",
+  "workshop_spaces": {"count": 2, "size": "90-100m2 each", "upstairs": "completely open, 360 degree rice-field view", "downstairs": "semi enclosed by half bamboo wall"},
+  "detox_programs": [
+    {"slug": "gut-parasite-cleanse", "name": "Gut & Parasite Cleanse", "banner_name": "Gut and Parasite Cleanse", "duration": "7 Days / 6 Nights", "body_says": "5-Day", "price_idr": 28500000, "short_option": "3 Days/2 Nights – IDR14,800,000"},
+    {"slug": "liver-cleanse", "name": "Liver Cleanse", "banner_name": "Liver Detox", "duration": "9 Days / 8 Nights", "body_says": "7-Day", "price_idr": 33500000, "short_option": "3 Days/2 Nights – IDR14,800,000"},
+    {"slug": "lymphatic-kidney-cleanse", "name": "Lymphatic & Kidney Cleanse", "banner_name": "Kidney Detox", "duration": "7 Days / 6 Nights", "body_says": "5-Day", "price_idr": 28500000, "short_option": null},
+    {"slug": "full-body-detox", "name": "Full Body Detox", "banner_name": "Full Body Detox", "duration": "19 Days / 18 Nights", "body_says": "17-Day", "price_idr": 69000000, "short_option": "8-Day/7-Night – IDR39,500,000"}
+  ],
+  "detox_practitioner": "TCM-trained Dr Daniela Donoso",
+  "terms": {
+    "casual_stay": ["Casual stay booking is confirmed with Rp. 1mil deposit.", "ALL deposits are non refundable."],
+    "retreats": ["All retreat bookings are confirmed with a deposit. Without deposit, we do not block out any dates officially.", "Retreat balance payment is due one month before the start of retreat date. Any last minute changes can be settled on check in day."]
+  },
+  "history": [
+    {"date": "2010-04-07", "title": "Dream Sketching"},
+    {"date": "2010-11-09", "title": "Magical Land Manifested"},
+    {"date": "2011-05-01", "title": "Dragonfly Village blueprint came into being"},
+    {"date": "2011-05-17", "title": "Land Ceremony", "text": "Ceremony honoring Dewi Shri and asking permission to convert the agriculture land into building"},
+    {"date": "2011-08-12", "title": "First Foundation", "text": "Dragonfly started to take on 3D existence with first foundation work on the land."},
+    {"date": "2013-03-16", "title": "Opening Ceremony", "text": "Dragonfly Village Balinese opening ceremony blessing by Mahareshi."}
+  ],
+  "events": [
+    {"slug": "dance-of-the-dragonfly", "title": "Dance of the Dragonfly", "when": "Every Wednesday · 5:00 – 7:00 PM", "price": "IDR 150k KITAS / 200k VISITORS", "tickets": "https://megatix.co.id/events/dance-of-the-dragonfly-archetype"},
+    {"slug": "shaolin-basics-foundations-of-shaolin-kung-fu-with-shifu-li-shi-feng", "title": "Shaolin Basics: Foundations of Shaolin Kung Fu with Shifu Li Shi Feng", "start": "2026-11-03", "end": "2026-11-08", "early_bird": "IDR 13.780 million (until 26 October 2026)", "normal": "IDR 14.980 million", "booking": "home@dragonfly-village.com"},
+    {"slug": "yang-tai-chi-the-complete-24-form-with-shifu-li-shi-feng", "title": "Yang Tai Chi: The Complete 24 Form with Shifu Li Shi Feng", "start": "2026-11-10", "end": "2026-11-15", "early_bird": "IDR 18.8 million (until 26 October 2026)", "normal": "IDR 22 million", "booking": "home@dragonfly-village.com"},
+    {"slug": "chen-tai-chi-fan-form-4-day-intensive-with-shifu-li-shi-feng", "title": "Chen Tai Chi Fan Form – 4-Day Intensive with Shifu Li Shi Feng", "start": "2026-11-17", "end": "2026-11-20", "early_bird": "IDR 10.5 million (until 10 November 2026)", "normal": "IDR 11.7 million", "booking": "home@dragonfly-village.com"},
+    {"slug": "nurturing-qi-gong-a-peaceful-3-day-experience-with-tcm-dr-jon-win", "title": "Nurturing Qi Gong – A peaceful 3-day experience with TCM Dr. Jon Win", "start": "2027-01-29", "end": "2027-01-31", "booking": "home@dragonfly-village.com"},
+    {"slug": "shaolin-arts-retreat-traditional-kung-fu-chi-kung", "title": "Shaolin Arts Retreat – Traditional Kung Fu & Chi Kung", "start": "2027-02-21", "end": "2027-02-27", "early_bird": "until end of November 2026", "booking": "https://crockungfu.com/bali-retreat"},
+    {"slug": "bali-retreat-power-without-armor-march-2-9-2027", "title": "Bali Retreat ~ Power Without Armor ~ March 2-9, 2027", "start": "2027-03-02", "end": "2027-03-09", "cohort_max": 11, "booking": "DM for details"}
+  ]
+}

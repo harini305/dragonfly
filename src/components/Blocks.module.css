@@ -1,0 +1,122 @@
+/* FAQ */
+
+.faq { border-top: 1px solid var(--line); }
+
+.faqItem { border-bottom: 1px solid var(--line); }
+
+.faqItem summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 56px;
+  padding: 0.85rem 0;
+  font-weight: 600;
+  color: var(--plum);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faqItem summary::-webkit-details-marker { display: none; }
+.faqItem summary:hover { color: var(--terracotta-ink); }
+
+.faqIcon {
+  position: relative;
+  flex: none;
+  width: 14px;
+  height: 14px;
+}
+
+.faqIcon::before,
+.faqIcon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.faqIcon::after { transform: rotate(90deg); }
+.faqItem[open] .faqIcon::after { transform: rotate(0); }
+
+.faqBody { padding: 0 0 1rem; max-width: var(--measure); }
+.faqBody p:last-child { margin-bottom: 0; }
+
+/* Location section: both columns share one height so the map has no gap below it. */
+@media (min-width: 900px) {
+  .visitGrid { align-items: stretch; }
+}
+
+/* Contact details */
+
+.contact {
+  display: grid;
+  gap: 1rem;
+  margin: var(--space-m) 0;
+}
+
+.contact dt { font-weight: 600; color: var(--plum); }
+.contact dd { margin: 0.15rem 0 0; }
+.contact address { font-style: normal; }
+
+@media (min-width: 640px) {
+  .contactCompact { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.arrival {
+  padding: 1rem 1.15rem;
+  background: var(--plum);
+  color: var(--on-plum);
+  max-width: var(--measure);
+}
+
+.arrival h3 { color: var(--white); font-size: 1.05rem; margin-bottom: 0.35rem; }
+.arrival p { margin: 0; }
+
+/* Event list */
+
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.event {
+  display: grid;
+  grid-template-columns: 4.25rem minmax(0, 1fr);
+  gap: 0.5rem 1.25rem;
+  padding-block: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.eventPoster { display: none; }
+
+@media (min-width: 700px) {
+  .event { grid-template-columns: 5.5rem minmax(0, 1fr) 150px; align-items: start; }
+  .eventPoster { display: block; }
+  .eventPoster img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-heading);
+  color: var(--plum);
+  line-height: 1.15;
+}
+
+.dateMain { font-weight: 600; font-size: 1.15rem; }
+.dateSub { font-size: var(--step--1); color: var(--grey); font-family: var(--font-body); }
+
+.eventTitle { font-size: var(--step-1); margin-bottom: 0.25rem; }
+.eventTitle a { color: var(--plum); text-decoration: none; }
+.eventTitle a:hover { color: var(--terracotta-ink); text-decoration: underline; }
+
+.eventWhen { margin: 0 0 0.4rem; font-weight: 600; color: var(--terracotta-ink); font-size: var(--step--1); }
+.eventSummary { margin: 0; color: var(--grey); max-width: 62ch; }
+.eventOffer { margin: 0.5rem 0 0; font-size: var(--step--1); font-weight: 600; }
+.eventText { min-width: 0; }
