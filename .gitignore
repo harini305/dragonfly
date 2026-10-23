@@ -10,3 +10,6 @@ npm-debug.log*
 .vercel
 # Phase 1 test screenshots (local reference only)
 docs/source-audit/screenshots/
+
+.vercel
+.env*
